@@ -24,21 +24,24 @@ export default function Contact(){
     const onSubmit = async (data: FormData) => {
     setStatus('loading');
     try {
-      const res = await fetch('/api/send-Mail', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        const res = await fetch('/api/send-Mail', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
         });
 
+        const result = await res.json();
+
         if (res.ok) {
-            setStatus('success');
+            setStatus('Message envoyé avec succès !');
             reset();
         } else {
-            setStatus('error');
+            setStatus(`Erreur : ${result.message}`);
         }
-        } catch (err) {
-        console.error(err);
-        setStatus('error');
+    } 
+    catch (error) {
+        setStatus('Erreur lors de l’envoi');
+        console.error(error);
         }
     };
 
