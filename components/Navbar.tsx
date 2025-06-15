@@ -2,17 +2,7 @@
 import Link from "next/link"
 import { Menu, X } from "lucide-react";
 import { useState,useEffect } from "react";
-import {Cinzel,Playfair_Display, Merriweather} from "next/font/google";
-
-// const cinzel = Cinzel({
-//     subsets:["latin"],
-//     weight: ['400', '500', '600', '700', '800', '900']
-// })
-
-// const merriweather = Merriweather({
-//   subsets: ['latin'],
-//   weight: ['400', '700'],
-// })
+import {Playfair_Display} from "next/font/google";
 
 const playfair = Playfair_Display({
   subsets: ['latin'],

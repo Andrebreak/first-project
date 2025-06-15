@@ -3,7 +3,7 @@ import { ArrowUp } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import Link from "next/link"
 import { Facebook, Linkedin } from 'lucide-react';
-import {Cinzel,Playfair_Display, Merriweather} from "next/font/google";
+import {Playfair_Display} from "next/font/google";
 const playfair = Playfair_Display({
   subsets: ['latin'],
   weight: ['400', '700'],
@@ -39,7 +39,7 @@ export default function Footer(){
                         <p className={` ${playfair.className} `}> <span  className="text-5xl tracking-[-10px]">AD</span></p>
                         <p className="text-xl ">avocats</p>
                     </div>
-                    <p className="">Cabinet d'avocats spécialisé en droit des affaires, contentieux et conformité réglementaire en Afrique de l'Ouest.</p>
+                    <p className="">Cabinet d&apos;avocats spécialisé en droit des affaires, contentieux et conformité réglementaire en Afrique de l&apos;Ouest.</p>
                     <p>Immeuble AD AVOCATRue des Juristes, CotonouBénin</p>
                     <p>+229 O1 XX XX XX</p>
                     <Link href="/contact" className="hover:underline cursor-pointer ">

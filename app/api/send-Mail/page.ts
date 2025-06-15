@@ -21,21 +21,29 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   });
 
   const mailOptions = {
-    from: email,
-    to: process.env.EMAIL_USER,
-    subject: `Message de ${name}`,
-    text: `
-      Nom: ${name}
-      Email: ${email}
-      Numéro: ${numero}
-      Message: ${message}`,
-    };
+  from: email,
+  to: process.env.EMAIL_USER,
+  subject: `Message de ${name}`,
+  text: `
+    Nom: ${name}
+    Email: ${email}
+    Numéro: ${numero}
+    Message: ${message}`,
+  };
 
   try {
     await transporter.sendMail(mailOptions);
     return res.status(200).json({ message: 'Email envoyé avec succès' });
-  } catch (error: any) {
+    } catch (error: unknown) {
     console.error('Erreur email :', error);
-    return res.status(500).json({ message: 'Erreur lors de l’envoi', error: error.message });
+
+    const errorMessage = error instanceof Error ? error.message : 'Une erreur inconnue s’est produite';
+
+    return res.status(500).json({ message: 'Erreur lors de l’envoi', error: errorMessage });
   }
+
+  // } catch (error: any) {
+  //   console.error('Erreur email :', error);
+  //   return res.status(500).json({ message: 'Erreur lors de l’envoi', error: error.message });
+  // }
 }

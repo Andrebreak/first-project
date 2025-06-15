@@ -4,14 +4,7 @@ import Footer from '@/components/Footer';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import Brandbg from '@/components/Brandbg';
-
-
-import {Cinzel,Playfair_Display} from "next/font/google";
-
-const cinzel = Cinzel({
-    subsets:["latin"],
-    weight: ['400', '500', '600', '700', '800', '900']
-});
+import {Playfair_Display} from "next/font/google";
 const playfair = Playfair_Display({
     subsets:["latin"],
     weight: ['400',"700"]
@@ -92,7 +85,7 @@ export default function Contact(){
                     </div>
                     <div className='flex flex-col gap-3 w-70 min-sm:w-100'>
                         <label htmlFor="numero">Numero</label>
-                        <p className="text-xs alert-warning">Veuillez entrer l'indicatif du pays de résidence avant le numero</p>
+                        <p className="text-xs alert-warning">Veuillez entrer l&apos;indicatif du pays de résidence avant le numero</p>
                         <input 
                         {...register('numero', 
                             { 

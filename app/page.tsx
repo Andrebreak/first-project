@@ -2,6 +2,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 import { ChevronLeft, ChevronRight,ShieldCheck, Gavel, Building2, FileSearch, Workflow, Landmark} from 'lucide-react';
 import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -60,13 +61,12 @@ export default function Home() {
           <h1 className="max-xl:mb-5 xl:mb-7 min-2xl:mb-15 text-xl font-semibold text-gray-800 tracking-[5px]">Présentation</h1>
           <div className="flex gap-20">
             <div  data-aos="fade" className="text-justify text-xl font-light">
-              Fondé avec la conviction que chaque client mérite une défense robuste et un conseil éclairé, AD AVOCAT s'est imposé comme un acteur majeur du paysage juridique.
+              Fondé avec la conviction que chaque client mérite une défense robuste et un conseil éclairé, AD AVOCAT s&apos;est imposé comme un acteur majeur du paysage juridique.
               Notre approche combine expertise technique et compréhension approfondie de vos enjeux pour vous offrir des solutions juridiques innovantes et efficace
             </div>
 
             <div className="h-70 w-400 max-2xl:hidden ">
-              <img className=" rounded-2xl w-full h-full object-cover  " src="/images/hero.jpg" alt="" />
-
+              <Image className=" rounded-2xl w-full h-full object-cover  " src="/images/hero.jpg" alt="" />
             </div>
             
           </div>
@@ -156,7 +156,7 @@ export default function Home() {
             </Swiper>
           </div>
         </div>
-        
+    
         {/* equipes */}
           <div className="sm:px-35  md:px-30 lg:px-30 xl:px-50">
             <h1 className="b-15 text-2xl min-sm:text-4xl font-semibold text-gray-800 mb-15 text-center "><span data-aos='fade' data-aos-easing="linear" >E</span><span data-aos='fade' data-aos-easing="linear" data-aos-delay='100'>q</span><span data-aos='fade' data-aos-easing="linear" data-aos-delay='200'>u</span><span data-aos='fade' data-aos-easing="linear" data-aos-delay='300'>i</span><span data-aos='fade' data-aos-easing="linear" data-aos-delay='400'>p</span><span data-aos='fade' data-aos-easing="linear" data-aos-delay='500'>e</span></h1>
@@ -165,7 +165,7 @@ export default function Home() {
 
               <div data-aos='fade-in' data-aos-delay='500'  className="group overflow-hidden">
                 <div className="h-90 mb-3 overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Image 1" className="w-full h-full  object-cover rounded mb-3 transition-transform duration-500 ease-in-out group-hover:scale-107" />
+                  <Image src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Image 1" className="w-full h-full  object-cover rounded mb-3 transition-transform duration-500 ease-in-out group-hover:scale-107" />
                 </div>
                 <div className="">
                   <p className="mb-2 ">Name</p>
@@ -176,7 +176,7 @@ export default function Home() {
 
               <div data-aos='fade-in' data-aos-delay='600'  className="group overflow-hidden">
                 <div className="h-90 mb-3 overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Image 1" className="w-full h-full  object-cover rounded mb-3 transition-transform duration-500 ease-in-out group-hover:scale-107" />
+                  <Image src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Image 1" className="w-full h-full  object-cover rounded mb-3 transition-transform duration-500 ease-in-out group-hover:scale-107" />
                 </div>
                  <div className="">
                   <p className=" mb-2 ">Name</p>
@@ -187,7 +187,7 @@ export default function Home() {
 
               <div data-aos='fade-in' data-aos-delay='700' className="group overflow-hidden">
                 <div className="h-90 mb-3 overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Image 1" className="w-full h-full  object-cover rounded mb-3 transition-transform duration-500 ease-in-out group-hover:scale-107" />
+                  <Image src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Image 1" className="w-full h-full  object-cover rounded mb-3 transition-transform duration-500 ease-in-out group-hover:scale-107" />
                 </div>
                 <div className=" ">
                   <p className=" mb-2">Name</p>
@@ -197,7 +197,7 @@ export default function Home() {
 
               <div data-aos='fade-in' data-aos-delay='800'  className="group overflow-hidden">
                 <div className="h-90 mb-3 overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Image 1" className="w-full h-full  object-cover rounded mb-3 transition-transform duration-500 ease-in-out group-hover:scale-107" />
+                  <Image src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Image 1" className="w-full h-full  object-cover rounded mb-3 transition-transform duration-500 ease-in-out group-hover:scale-107" />
                 </div>
                 <div className=" ">
                   <p className=" mb-2">Name</p>

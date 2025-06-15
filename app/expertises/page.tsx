@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer";
-import { Check, Import } from "lucide-react";
+import {Check} from "lucide-react";
 import {Playfair_Display} from "next/font/google";
 import Brandbg from "@/components/Brandbg";
 
@@ -38,7 +38,7 @@ export default function Expertises(){
                                     </li>
                                     <li className="flex items-center gap-2">
                                         <Check size={20} className="text-[#C29D59] " />
-                                        Conseil en structuration d'entreprises
+                                        Conseil en structuration d&apos;entreprises
                                     </li>
                                     <li className="flex items-center gap-2">
                                         <Check size={20} className="text-[#C29D59] " />
@@ -79,10 +79,9 @@ export default function Expertises(){
                             <ul className="flex font-light flex-col space-y-3 ">
                                 <li className="flex items-center gap-2"><Check size={20} className="text-[#C29D59] " />Conformité LCB-FT/AML</li>
                                 <li className="flex items-center gap-2"><Check size={20} className="text-[#C29D59] " />Règlementation ESG</li>
-                                <li className="flex items-center gap-2"><Check size={20} className="text-[#C29D59] " />Gouvernance d'entreprise</li>
+                                <li className="flex items-center gap-2"><Check size={20} className="text-[#C29D59] " />Gouvernance d&apos;entreprise</li>
                                 <li className="flex items-center gap-2"><Check size={20} className="text-[#C29D59] " />Protection des données (RGPD)</li>
-                                <li className="flex items-center gap-2"><Check size={20} className="text-[#C29D59] " />Audits de conformité</li>
-                                
+                                <li className="flex items-center gap-2"><Check size={20} className="text-[#C29D59] " />Audits de conformité</li>   
                             </ul>
                         </div>
                     </div>
