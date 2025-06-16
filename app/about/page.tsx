@@ -33,8 +33,8 @@ export default function About(){
                             Implanté à Cotonou avec un réseau de correspondants dans toute la région UEMOA, nous intervenons sur des dossiers complexes nécessitant une expertise transfrontalière et une compréhension fine des enjeux régionaux.
                         </div>
 
-                        <div className="h-70 w-300 max-2xl:hidden ">
-                            <Image className=" rounded-xl w-full h-full object-cover" src="/images/card3.jpg" alt="..."/>
+                        <div className="relative h-70 w-300 max-2xl:hidden ">
+                            <Image className=" rounded-xl w-full h-full object-cover" fill src="/images/card3.jpg" alt="..."/>
                         </div>
                     
                     </div>

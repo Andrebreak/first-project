@@ -31,7 +31,7 @@ export default function Home() {
       <Navbar/>
        <div className="fixed -z-20 top-1/2 left-1/2  text-gray-800 transform -translate-x-1/2 -translate-y-1/2 ">
           <div className="p-0 m-0 flex items-baseline">
-            <p className={`cursor-pointer ${playfair.className} `}> <span  className="text-[200px] sm:text-[250px] md:text-[380px] min-lg:text-[500px]  tracking-[-10px]">AD</span></p>
+            <p className={`cursor-pointer ${playfair.className} `}> <span  className=" text-[240px] sm:text-[300px] md:text-[380px] min-lg:text-[500px] tracking-[-40px]  sm:tracking-[-40px] md:tracking-[-60px] min-lg:tracking-[-75px]">AD</span></p>
             <p className=" text-3xl ">avocats</p>
           </div>
         </div>
@@ -65,8 +65,8 @@ export default function Home() {
               Notre approche combine expertise technique et compréhension approfondie de vos enjeux pour vous offrir des solutions juridiques innovantes et efficace
             </div>
 
-            <div className="h-70 w-400 max-2xl:hidden ">
-              <Image className=" rounded-2xl w-full h-full object-cover  " src="/images/hero.jpg" alt="" />
+            <div className=" relative w-400 h-60 max-2xl:hidden ">
+              <Image className=" rounded-xl object-cover" src="/images/card1.jpg" fill alt="" />
             </div>
             
           </div>
@@ -164,43 +164,43 @@ export default function Home() {
             <div className="grid px-10 min-sm:px-0 items-center justify-center sm:gap-14 lg:gap-4 grid-cols-1 md:grid-cols-2 min-lg:grid-cols-4 gap-15 ">
 
               <div data-aos='fade-in' data-aos-delay='500'  className="group overflow-hidden">
-                <div className="h-90 mb-3 overflow-hidden">
-                  <Image src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Image 1" className="w-full h-full  object-cover rounded mb-3 transition-transform duration-500 ease-in-out group-hover:scale-107" />
+                <div className="relative h-90  mb-3 overflow-hidden">
+                  <Image  src="/images/avocat1.jpg" className=" rounded-md object-cover" fill alt="" />
                 </div>
                 <div className="">
-                  <p className="mb-2 ">Name</p>
+                  <p className="mb-2 ">Nom</p>
                   <p className="text-gray-600"> description</p>
                 </div>
               </div>
 
 
               <div data-aos='fade-in' data-aos-delay='600'  className="group overflow-hidden">
-                <div className="h-90 mb-3 overflow-hidden">
-                  <Image src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Image 1" className="w-full h-full  object-cover rounded mb-3 transition-transform duration-500 ease-in-out group-hover:scale-107" />
+                <div className="relative h-90  mb-3 overflow-hidden">
+                  <Image  src="/images/avocat1.jpg" className=" rounded-md object-cover" fill alt="" />
                 </div>
-                 <div className="">
-                  <p className=" mb-2 ">Name</p>
+                <div className="">
+                  <p className=" mb-2 ">Nom</p>
                   <p className="text-gray-500"> description</p>
                 </div>
               </div>
 
 
               <div data-aos='fade-in' data-aos-delay='700' className="group overflow-hidden">
-                <div className="h-90 mb-3 overflow-hidden">
-                  <Image src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Image 1" className="w-full h-full  object-cover rounded mb-3 transition-transform duration-500 ease-in-out group-hover:scale-107" />
+                <div className="relative h-90  mb-3 overflow-hidden">
+                  <Image  src="/images/avocat.jpg" className=" rounded-md object-cover" fill alt="" />
                 </div>
                 <div className=" ">
-                  <p className=" mb-2">Name</p>
+                  <p className=" mb-2">Nom</p>
                   <p className="text-gray-500"> description</p>
                 </div>
               </div>
 
               <div data-aos='fade-in' data-aos-delay='800'  className="group overflow-hidden">
-                <div className="h-90 mb-3 overflow-hidden">
-                  <Image src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Image 1" className="w-full h-full  object-cover rounded mb-3 transition-transform duration-500 ease-in-out group-hover:scale-107" />
+                <div className="relative h-90  mb-3 overflow-hidden">
+                  <Image  src="/images/avocat.jpg" className=" rounded-md object-cover" fill alt="" />
                 </div>
                 <div className=" ">
-                  <p className=" mb-2">Name</p>
+                  <p className=" mb-2">Nom</p>
                   <p className="text-gray-500"> description</p>
                 </div>
               </div>

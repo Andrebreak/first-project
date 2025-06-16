@@ -77,7 +77,7 @@ export default function Navbar(){
                     <Link onClick={()=>{setIsOpen(false)}} className=" hover:text-blue-900 text-xl" href="/">Accueil</Link>
                     <Link onClick={()=>{setIsOpen(false)}} className=" hover:text-blue-900 text-xl"href="/about">À propos</Link>
                     <Link onClick={()=>{setIsOpen(false)}} className=" hover:text-blue-900 text-xl"href="/expertises">Expertises</Link>
-                    <Link onClick={()=>{setIsOpen(false)}} className=" hover:text-blue-900 text-xl"href="/blog">Blog</Link>
+                    {/* <Link onClick={()=>{setIsOpen(false)}} className=" hover:text-blue-900 text-xl"href="/blog">Blog</Link> */}
                     <Link onClick={()=>{setIsOpen(false)}} className=" hover:text-blue-900 text-xl"href="/contact">Contact</Link> 
                 </ul>
 

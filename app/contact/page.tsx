@@ -1,8 +1,8 @@
 'use client';
+import toast,{ Toaster } from "react-hot-toast"
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer';
 import { useForm } from 'react-hook-form';
-import { useState } from 'react';
 import Brandbg from '@/components/Brandbg';
 import {Playfair_Display} from "next/font/google";
 const playfair = Playfair_Display({
@@ -19,31 +19,37 @@ type FormData = {
 
 export default function Contact(){
     const { register, handleSubmit, formState: { errors },reset} = useForm<FormData>();
-    const [status, setStatus] = useState<string | null>(null);
 
     const onSubmit = async (data: FormData) => {
-    setStatus('loading');
-    try {
-        const res = await fetch('/api/send-Mail', {
+        console.log(data)
+        const sendPromise = fetch('/api/send-Mail', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data),
+        }).then(async (res) => {
+            const result = await res.json();
+            if (!res.ok) throw new Error(result.message || 'Erreur serveur');
+            return result;
         });
 
-        const result = await res.json();
+        toast.promise(
+            sendPromise,
+            {
+                loading: "📩 Envoi de votre message en cours...",
+                success: 'Votre message a bien été envoyé. Nous reviendrons vers vous sous peu.',
+                error: (err) => `Échec : ${err.message}`,
+            }
+        );
 
-        if (res.ok) {
-            setStatus('Message envoyé avec succès !');
-            reset();
-        } else {
-            setStatus(`Erreur : ${result.message}`);
-        }
-    } 
-    catch (error) {
-        setStatus('Erreur lors de l’envoi');
-        console.error(error);
+        try {
+            await sendPromise;
+            reset(); // Réinitialiser le formulaire si OK
+        } 
+        catch (e) {
+            // L'erreur est déjà gérée par toast.error
         }
     };
+    
 
     return(
         <>
@@ -94,12 +100,12 @@ export default function Contact(){
                             { 
                                 required: "le numero est obligatoire",
                                 pattern:{
-                                    value:/^\+\d{8,15}$/,
+                                    value:/^\+?\d{8,15}$/,
                                     message: 'Format numero invalide',
                                 }
                             })
                         } 
-                        type="numero" id='numero' placeholder='+xxxxxxxxxxxxx' className="input w-full" />
+                        type="tel" id='numero' placeholder='+xxxxxxxxxxxxx' className="input w-full" />
                         {errors.numero && <p className="mt-2 text-xs text-error">{errors.numero.message}</p>}
                     </div>
                     <div className='flex flex-col gap-3 w-70 min-sm:w-100'>
@@ -116,9 +122,8 @@ export default function Contact(){
                         className="textarea w-full" id='message' />
                         {errors.message && <p className="mt-2 text-xs text-error">{errors.message.message}</p>}
                     </div>
-                    
                     <button className="btn bg-gray-600 font-light uppercase text-white hover:bg-white hover:text-gray-600 btn-md min-sm:btn-lg" type="submit">Envoyer</button>
-                    <p>{status}</p>
+                    <Toaster position="top-center" toastOptions={{ duration: 5000 , className:"max-md:text-sm font-light text-gray-800"}}  reverseOrder={false} />
                 </form>
                 
 
