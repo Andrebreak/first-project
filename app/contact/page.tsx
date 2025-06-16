@@ -21,7 +21,6 @@ export default function Contact(){
     const { register, handleSubmit, formState: { errors },reset} = useForm<FormData>();
 
     const onSubmit = async (data: FormData) => {
-        console.log(data)
         const sendPromise = fetch('/api/send-Mail', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },

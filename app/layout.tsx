@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import AOSWrapper from "@/components/AOSWrapper";
 
@@ -14,11 +16,12 @@ export default function RootLayout({
 }>) {
   
   return (
-    
     <html lang="fr" data-theme="light" >
       <body className="antialiased min-h-screen bg-gray-100/96 ">
         <AOSWrapper />
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

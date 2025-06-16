@@ -25,16 +25,15 @@ export default function Home() {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
   return (
-    
     <>
       {/* nav   */}
       <Navbar/>
-       <div className="fixed -z-20 top-1/2 left-1/2  text-gray-800 transform -translate-x-1/2 -translate-y-1/2 ">
-          <div className="p-0 m-0 flex items-baseline">
-            <p className={`cursor-pointer ${playfair.className} `}> <span  className=" text-[240px] sm:text-[300px] md:text-[380px] min-lg:text-[500px] tracking-[-40px]  sm:tracking-[-40px] md:tracking-[-60px] min-lg:tracking-[-75px]">AD</span></p>
-            <p className=" text-3xl ">avocats</p>
-          </div>
+      <div className="fixed -z-20 top-1/2 left-1/2  text-gray-800 transform -translate-x-1/2 -translate-y-1/2 ">
+        <div className="p-0 m-0 flex items-baseline">
+          <p className={`cursor-pointer ${playfair.className} `}> <span  className=" text-[240px] sm:text-[300px] md:text-[380px] min-lg:text-[500px] tracking-[-40px]  sm:tracking-[-40px] md:tracking-[-60px] min-lg:tracking-[-75px]">AD</span></p>
+          <p className=" text-3xl ">avocats</p>
         </div>
+      </div>
       {/* cta */}
       
       <header  data-aos="fade-right" className="relative h-100   min-sm:h-screen flex flex-col bg-[linear-gradient(to_right,rgba(31,41,55,1),transparent),url(/images/hero.jpg)] bg-cover bg-center bg-no-repeat">
@@ -42,7 +41,7 @@ export default function Home() {
           <div  data-aos="fade-down"  data-aos-delay="800" className={`  ${cinzel.className} hidden min-sm:block min-sm:text-4xl min-sm:tracking-[5px] text-center `}> 
             <h1>Votre excellence juridique à portée de main.</h1>
           </div>
-           <div  data-aos="fade-down"  data-aos-delay="800" className={`${cinzel.className} font-[500]  min-sm:hidden text-3xl text-center`}> 
+          <div  data-aos="fade-down"  data-aos-delay="800" className={`${cinzel.className} font-[500]  min-sm:hidden text-3xl text-center`}> 
             <h1>Votre excellence juridique à portée de main.</h1>
           </div>
           <div  data-aos="fade-up"  data-aos-delay="1000" className="text-center">
