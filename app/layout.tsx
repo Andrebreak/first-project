@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="fr" data-theme="light" >
       <Head>
-        <title>Cabinet d'avocats à Cotonou - AD avocat</title>
+        <title>Cabinet d&apos;avocats à Cotonou - AD avocat</title>
         <meta name="description" content="Cabinet d'avocats à Cotonou spécialisé en droit des affaires, contentieux et conseil juridique. Contactez-nous." />
         <meta name="keywords" content="avocat, cabinet d'avocats, droit, cotonou, bénin, juridique, contentieux, conseil" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
