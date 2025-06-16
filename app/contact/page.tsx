@@ -43,10 +43,10 @@ export default function Contact(){
 
         try {
             await sendPromise;
-            reset(); // Réinitialiser le formulaire si OK
+            reset();
         } 
         catch (e) {
-            // L'erreur est déjà gérée par toast.error
+            console.error(e)
         }
     };
     
