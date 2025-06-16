@@ -49,9 +49,9 @@ export default function About(){
                     <div className="grid grid-cols-1 min-lg:grid-cols-2 min-xl:grid-cols-3 gap-10 justify-center items-center ">
                         <div  data-aos='fade-up'  data-aos-delay='100' className='bg-white shadow-md p-10 flex flex-col gap-10 justify-center items-center mb-3'>
                             <Target size={50} className="text-[#C29D59] "/>
-                            <h1 className='font-semibold text-gray-800 text-xl min-sm:text-2xl'>Notre Mission</h1>
+                            <h1 className='font-semibold text-gray-800 text-xl min-sm:text-2xl'>Valeur ajoutée</h1>
                             <p className='font-light text-justify'>Offrir un accompagnement juridique stratégique qui sécurise les opérations de nos clients tout en favorisant leur développement en Afrique.
-                             Nous combinons rigueur technique et approche business pour des conseils réellement opérationnels.
+                                Nous combinons rigueur technique et approche business pour des conseils réellement opérationnels.
                             </p>
 
                         </div>

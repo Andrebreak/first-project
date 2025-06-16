@@ -12,7 +12,6 @@ const playfair = Playfair_Display({
 export default function Expertises(){
     return(
         <>
-
             <Navbar />
             <Brandbg />
             <section  className="py-20" >
@@ -56,7 +55,7 @@ export default function Expertises(){
                     </div>
 
                     <div data-aos='fade-left' className=" p-10 justify-center flex flex-col min-xl:h-120 bg-white shadow-md rounded-xl">
-                        <h1 className=" text-xl text-center font-semibold min-sm:text-2xl mb-5 text-gray-600 ">Contentieux & Arbitrage</h1>
+                        <h1 className=" text-xl text-center font-semibold min-sm:text-2xl mb-5 text-gray-600 ">Droit public des affaires</h1>
                         <p className="mb-7 text-center min-md:text-start">Représentation efficace devant les juridictions nationales et internationales</p>
                         <div className="flex flex-col space-y-4">
                             <h1 className="text-md font-semibold  ">Prestations</h1>

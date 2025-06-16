@@ -50,34 +50,34 @@ export default function Footer(){
                 <ul data-aos="fade-left" className=" flex flex-col space-y-4 ">
                     <h1 className="">Expertises</h1>
                     <li>
-                    <Link href="/expertises" className=" font-light hover:">
-                        Conseil Juridique
-                    </Link>
+                        <Link href="/expertises" className=" font-light hover:">
+                            Conseil Juridique
+                        </Link>
                     </li>
                     <li>
-                    <Link href="/expertises" className=" font-light hover:">
-                        Contentieux & Arbitrage
-                    </Link>
+                        <Link href="/expertises" className=" font-light hover:">
+                            Droit public des affaires
+                        </Link>
                     </li>
                     <li>
-                    <Link href="/expertises" className=" font-light hover:">
-                        Conformité Réglementaire
-                    </Link>
+                        <Link href="/expertises" className=" font-light hover:">
+                            Conformité Réglementaire
+                        </Link>
                     </li>
                     <li>
-                    <Link href="/expertises" className=" font-light hover:">
-                        Veille Juridique
-                    </Link>
+                        <Link href="/expertises" className=" font-light hover:">
+                            Veille Juridique
+                        </Link>
                     </li>
                     <li>
-                    <Link href="/expertises" className=" font-light hover:">
-                        Projets Stratégiques
-                    </Link>
+                        <Link href="/expertises" className=" font-light hover:">
+                            Projets Stratégiques
+                        </Link>
                     </li>
                     <li>
-                    <Link href="/expertises" className=" font-light hover:">
-                        Relations Institutionnelles
-                    </Link>
+                        <Link href="/expertises" className=" font-light hover:">
+                            Relations Institutionnelles
+                        </Link>
                     </li>
                 </ul>
 
