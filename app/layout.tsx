@@ -3,8 +3,6 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import AOSWrapper from "@/components/AOSWrapper";
-// seo friendly
-import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,13 +17,6 @@ export default function RootLayout({
   
   return (
     <html lang="fr" data-theme="light" >
-      <Head>
-        <title>Cabinet d&apos;avocats à Cotonou - AD avocat</title>
-        <meta name="description" content="Cabinet d'avocats à Cotonou spécialisé en droit des affaires, contentieux et conseil juridique. Contactez-nous." />
-        <meta name="keywords" content="avocat, cabinet d'avocats, droit, cotonou, bénin, juridique, contentieux, conseil" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://ad-avocats-project-psi.vercel.app/" />
-      </Head>
       <body className="antialiased min-h-screen bg-gray-100/96 ">
         <AOSWrapper />
         {children}

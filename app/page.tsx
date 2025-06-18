@@ -1,5 +1,6 @@
 'use client'
 import Navbar from "@/components/Navbar";
+import Head from 'next/head';
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Image from "next/image";
@@ -25,6 +26,39 @@ export default function Home() {
   const nextRef = useRef(null);
   return (
     <>
+      <Head>
+        <title>Cabinet d&apos;avocats à Cotonou - AD avocat</title>
+        <meta name="description"  content="AD Avocats, cabinet d'avocats basé à Cotonou, est spécialisé en droit public des affaires, conseil et sécurité juridique, gouvernance et conformité, réglement et veille,projets stratégiques,relation institutionnelles en Afrique de l'Ouest."/>
+        <meta name="keywords" content="avocat, cabinet d'avocats, droit, cotonou, bénin, juridique, contentieux, conseil" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* <link rel="canonical" href="https://ad-avocats-project-psi.vercel.app/" /> */}
+
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:title" content="Cabinet d'avocats à Cotonou - AD Avocats" />
+        <meta
+          property="og:description"
+          content="Découvrez AD Avocats, un cabinet d'avocats à Cotonou reconnu pour son expertise en droit des affaires et son accompagnement stratégique des entreprises."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="AD Avocats" />
+        {/* <meta property="og:image" content="" />
+        <meta property="og:url" content="" /> */}
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Cabinet d'avocats à Cotonou - AD Avocats" />
+        <meta
+          name="twitter:description"
+          content="Découvrez la vision et les engagements du cabinet AD Avocats, acteur majeur du droit des affaires en Afrique de l'Ouest."
+        />
+        <meta name="twitter:image" content="https://www.adavocats.com/images/accueil.jpg" />
+        <meta name="twitter:site" content="@adavocats" />
+
+        {/* Favicon */}
+        {/* <link rel="icon" href="/" /> */}
+      </Head> 
+
       <div className="fixed -z-20 top-1/2 left-1/2  text-gray-800 transform -translate-x-1/2 -translate-y-1/2 ">
         <div className="p-0 m-0 flex items-baseline">
           <p className={`cursor-pointer ${playfair.className} `}> <span  className=" text-[240px] sm:text-[300px] md:text-[380px] min-lg:text-[500px] tracking-[-40px]  sm:tracking-[-40px] md:tracking-[-60px] min-lg:tracking-[-75px]">AD</span></p>

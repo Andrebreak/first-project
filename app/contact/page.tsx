@@ -1,5 +1,6 @@
 'use client';
 import toast,{ Toaster } from "react-hot-toast"
+import Head from "next/head";
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer';
 import { useForm } from 'react-hook-form';
@@ -52,13 +53,44 @@ export default function Contact(){
 
     return(
         <>
+            <Head>
+                <title>Contact - AD Avocats | Cabinet d&apos;avocat à Cotonou</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="description" content="Besoin d'un conseil juridique ou d'un accompagnement ? Contactez AD Avocats, cabinet d'avocats à Cotonou spécialisé en droit des affaires et contentieux." />
+                <meta name="keywords" content="avocat, cabinet d'avocats, droit, cotonou, bénin, juridique, contentieux, conseil" />
+                {/* <link rel="canonical" href="https://www.tonsite.com/" /> */}
+
+                {/* Open Graph / Facebook */}
+                <meta property="og:title" content="Contact - AD Avocats à Cotonou" />
+                <meta
+                    property="og:description"
+                    content="Prenez rendez-vous avec notre cabinet d'avocats à Cotonou. Experts en droit des affaires, nous vous accompagnons dans vos projets juridiques."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:site_name" content="AD Avocats" />
+                {/* <meta property="og:image" content="" />
+                <meta property="og:url" content="" /> */}
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Contact - AD Avocats à Cotonou" />
+                <meta
+                    name="twitter:description"
+                    content="Besoin d'un avocat au Bénin ? Contactez-nous pour un rendez-vous ou une consultation juridique."
+                />
+                {/* <meta name="twitter:image" content="" /> */}
+                {/* <meta name="twitter:site" content="" /> */}
+                
+                {/* Favicon */}
+                {/* <link rel="icon" href="" /> */}
+            </Head>
             <Navbar/>
             <Brandbg />
             <section className='py-20 px-5 min-sm:mb-20 min-sm:px-10'>
-                <div  data-aos='fade-down' className=" text-center mb-10 text-gray-800 ">
+                <header  data-aos='fade-down' className=" text-center mb-10 text-gray-800 ">
                     <h1 className={` font-[500] uppercase text-4xl ${playfair.className} text-center mb-8`}>Contact</h1>
                     <p className={`font-light `}>Vous pouvez nous envoyer un message en indiquant votre nom, email et téléphone afin que nous puissions échanger.</p>
-                </div>
+                </header>
                 <form onSubmit={handleSubmit(onSubmit)} className="flex items-center flex-col justify-center gap-4 ">
                     <div className='flex flex-col gap-3 w-70 min-sm:w-100'>
                         <label className='' htmlFor="nom">Nom</label>
@@ -124,9 +156,6 @@ export default function Contact(){
                     <button className="btn bg-gray-600 font-light uppercase text-white hover:bg-white hover:text-gray-600 btn-md min-sm:btn-lg" type="submit">Envoyer</button>
                     <Toaster position="top-center" toastOptions={{ duration: 5000 , className:"max-md:text-sm font-light text-gray-800"}}  reverseOrder={false} />
                 </form>
-                
-
-                
             </section>
 
             <Footer/>
