@@ -47,14 +47,14 @@ export default function Navbar(){
                         <Link  className=" hover:text-gray-500 hover:underline underline-offset-8" href="/">Accueil</Link>
                     </li>
                     <li>
-                        <Link  className=" hover:text-gray-500 hover:underline  underline-offset-8"href="/about">À  propos</Link>
+                        <Link  className=" hover:text-gray-500 hover:underline  underline-offset-8"href="/A-propos">À  propos</Link>
                     </li>
                     <li>
                         <Link  className=" hover:text-gray-500 hover:underline  underline-offset-8"href="/expertises">Expertises</Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link  className=" hover:text-gray-500 hover:underline  underline-offset-8"href="/blog">Blog</Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link  className=" hover:text-gray-500 hover:underline  underline-offset-8"href="/contact">Contact</Link> 
                     </li>
@@ -84,7 +84,7 @@ export default function Navbar(){
                         <Link onClick={()=>{setIsOpen(false)}} className="" href="/">Accueil</Link>
                     </li>
                     <li>
-                        <Link onClick={()=>{setIsOpen(false)}} className=""href="/about">À propos</Link>
+                        <Link onClick={()=>{setIsOpen(false)}} className=""href="/A-propos">À propos</Link>
                     </li>
                     <li>
                         <Link onClick={()=>{setIsOpen(false)}} className=""href="/expertises">Expertises</Link> 
