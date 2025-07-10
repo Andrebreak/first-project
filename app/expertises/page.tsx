@@ -45,7 +45,10 @@ export default function Expertises(){
                 {/* <link rel="icon" href="" /> */}
             </Head>
             
-            <Navbar />
+            {/* header */}
+            <header className="sticky top-0 z-50">
+                <Navbar/>
+            </header>
             <Brandbg />
 
             <main  className="py-20" >

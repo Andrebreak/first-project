@@ -1,4 +1,4 @@
-'use client'; // si tu utilises l'app directory
+'use client'; 
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -11,7 +11,7 @@ const AOSWrapper: React.FC = () => {
     });
   }, []);
 
-  return null; // Pas besoin d'affichage
+  return null;
 };
 
 export default AOSWrapper;

@@ -84,7 +84,10 @@ export default function Contact(){
                 {/* Favicon */}
                 {/* <link rel="icon" href="" /> */}
             </Head>
-            <Navbar/>
+            {/* header */}
+            <header className="sticky top-0 z-50">
+                <Navbar/>
+            </header>
             <Brandbg />
             <section className='py-20 px-5 min-sm:mb-20 min-sm:px-10'>
                 <header  data-aos='fade-down' className=" text-center mb-10 text-gray-800 ">

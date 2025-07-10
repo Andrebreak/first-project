@@ -25,7 +25,7 @@ export default function Navbar(){
     const [isOpen, setIsOpen] = useState(false);
 
     return(
-        <nav className={`sticky top-0 z-50 bg-white transition-shadow ${scrolled ? 'shadow-sm' : ''}`}>
+        <nav className={` bg-white transition-shadow ${scrolled ? 'shadow-sm' : ''}`}>
             {/* Menu desktop */}
             <section className={`flex bg-white justify-between items-center py-3 px-7 md:px-15 min-lg:px-20 `}>
                 <div className=" text-gray-800 font-semibold ">
@@ -42,7 +42,7 @@ export default function Navbar(){
                     <Menu size={35} className="text-gray-800"/>
                 </button>
 
-                <ul className="flex gap-8 text-gray-800 max-lg:hidden">
+                <ul className={`flex gap-8  text-gray-800 max-lg:hidden font-semibold uppercase text-[13px]`}>
                     <li>
                         <Link  className=" hover:text-gray-500 hover:underline underline-offset-8" href="/">Accueil</Link>
                     </li>
@@ -63,7 +63,7 @@ export default function Navbar(){
            
 
             {/* Menu responsive*/}
-            <section className={`fixed  h-full w-full top-0 z-50 min-lg:hidden bg-gray-50 transform transition-transform duration-300  ease-in-out
+            <section className={`fixed h-full w-full top-0 z-50 min-lg:hidden bg-gray-50 transform transition-transform duration-300  ease-in-out
                 ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
 
                 <div className="flex justify-between mb-15 border-b-1 border-gray-300 px-15 py-5">

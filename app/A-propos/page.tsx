@@ -46,7 +46,11 @@ export default function About(){
                 {/* <link rel="icon" href="" /> */}
             </Head>
 
-            <Navbar/>
+                
+            {/* header */}
+            <header className="sticky top-0 z-50">
+                <Navbar/>
+            </header>
 
             <Brandbg />
 
@@ -55,7 +59,7 @@ export default function About(){
                     <header>
                         <h1 className={` font-[500] uppercase text-4xl mb-10 ${playfair.className} `}>À PROPOS</h1>
                     </header>
-                    <p className="font-light" >Fondé en 2025 à Cotonou, AD avocats s&apos;est imposé comme un acteur clé du droit des affaires en Afrique de l&apos;Ouest grâce à notre expertise pointue et notre engagement sans faille.</p>
+                    <p className="font-light text-justify min-md:text-left" >Fondé à Paris en 2021, AD Avocat est un cabinet qui oriente désormais ses activités vers l&apos;Afrique. Il s&apos;agit de développer son expertise en droit des affaires notamment dans sa dimension conseils. </p>
                 </section>
 
                 <section data-aos='fade-right' className='mb-30'>
@@ -65,11 +69,19 @@ export default function About(){
 
                     <div className="flex gap-20 ">
                         <div className="text-justify font-light">
+                            <p className='mb-3'>
                             AD AVOCAT est un cabinet d&apos;avocats indépendant spécialisé en droit des affaires, contentieux et conformité réglementaire en Afrique de l&apos;Ouest. 
-                            Depuis notre création, nous accompagnons entreprises, institutions et particuliers dans la sécurisation de leurs opérations et projets. <br />
-                            Notre particularité ? Une approche combinant excellence technique et profonde connaissance des réalités économiques africaines. 
+                            Depuis notre création, nous accompagnons entreprises, institutions et particuliers dans la sécurisation de leurs opérations et projets. 
+                            </p>
+                            <p className='mb-3'>
+                                Notre particularité ? Une approche combinant excellence technique et profonde connaissance des nouvelles réalités économiques africaines. Notre équipe présente sur le terrain a une parfaite connaissance des règles et standards qui concourent au développement du continent africain.
+                            </p>
+                            <p>
+                                Nous sommes implantés à Cotonou avec un réseau de correspondants dans toute la région UEMOA, nous intervenons sur des dossiers complexes nécessitant une expertise transfrontalière et une compréhension fine des enjeux économiques régionaux.
+                            </p>
+                            {/* Notre particularité ? Une approche combinant excellence technique et profonde connaissance des réalités économiques africaines. 
                             Nos avocats, formés aux meilleures universités et forts d&apos;expériences internationales, maîtrisent tant les standards internationaux que les spécificités locales. <br />
-                            Implanté à Cotonou avec un réseau de correspondants dans toute la région UEMOA, nous intervenons sur des dossiers complexes nécessitant une expertise transfrontalière et une compréhension fine des enjeux régionaux.
+                            Implanté à Cotonou avec un réseau de correspondants dans toute la région UEMOA, nous intervenons sur des dossiers complexes nécessitant une expertise transfrontalière et une compréhension fine des enjeux régionaux. */}
                         </div>
                         <div className="relative h-70 w-300 max-2xl:hidden ">
                             <Image className=" rounded-xl w-full h-full object-cover" fill src="/images/card3.jpg" alt="Statue de la Justice,Thémis"/>

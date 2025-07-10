@@ -11,6 +11,7 @@ import { Navigation,Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import {Cinzel, Playfair_Display} from "next/font/google";
+
 const playfair = Playfair_Display({
   subsets:["latin"],
   weight: ['400',"700"]
@@ -30,7 +31,7 @@ export default function Home() {
         <title>Cabinet d&apos;avocats à Cotonou - AD avocat</title>
         <meta name="description"  content="AD Avocats, cabinet d'avocats basé à Cotonou, est spécialisé en droit public des affaires, conseil et sécurité juridique, gouvernance et conformité, réglement et veille,projets stratégiques,relation institutionnelles en Afrique de l'Ouest."/>
         <meta name="keywords" content="avocat, cabinet d'avocats, droit, cotonou, bénin, juridique, contentieux, conseil" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
         {/* <link rel="canonical" href="https://ad-avocats-project-psi.vercel.app/" /> */}
 
         
@@ -67,7 +68,7 @@ export default function Home() {
       </div>
 
       {/* header */}
-      <header>
+      <header className="sticky top-0 z-50">
         <Navbar/>
       </header>
 
@@ -81,25 +82,30 @@ export default function Home() {
             <p className={`font-light mb-5 text-sm min-sm:text-lg `}>
               AD AVOCAT offre un accompagnement juridique sur mesure pour protéger vos intérêts
             </p>
-            <Link  className=" btn btn-md min-sm:btn-lg text-gray-700 uppercase font-light border-none shadow-none  bg-white hover:bg-gray-700 hover:text-white" href="/about">Découvrir</Link>
+            <Link  className=" btn btn-md min-sm:btn-lg text-gray-700 uppercase font-light border-none shadow-none  bg-white hover:bg-gray-700 hover:text-white" href="/A-propos">Découvrir</Link>
           </div>
         </div>
       </section>
 
       <main className="py-30 px-5 min-sm:px-0">
         {/* About  */}
-        <section className="mb-40 sm:px-15 md:px-30 lg:px-30 xl:px-50">
+        <section className="mb-40 sm:px-15 md:px-30 lg:px-30 xl:px-50 ">
           <header>
-            <h2 className="max-xl:mb-5 xl:mb-7 min-2xl:mb-15 text-xl font-semibold text-gray-800 tracking-[5px]">Présentation</h2>
+            <h2 className="max-xl:mb-3 xl:mb-5 min-2xl:mb-7 text-2xl font-semibold text-gray-800 tracking-[5px]">Présentation</h2>
           </header>
-          <div className="flex gap-20">
-            <p data-aos="fade" className=" text-justify text-xl font-light">
-              Fondé avec la conviction que chaque client mérite une défense robuste et un conseil éclairé, AD AVOCAT porte l&apos;ambition d&apos;accompagner ses clients dans leurs différents secteurs d&apos;activités.
-              Notre approche combine expertise technique et compréhension approfondie de vos enjeux pour vous offrir des solutions juridiques innovantes et efficace
-            </p>
-            <div className=" relative w-400 h-60 max-2xl:hidden ">
-              <Image className=" rounded-xl object-cover" alt="Statue de la Justice ,Thémis" src="/images/card1.jpg" fill />
+          <div className="flex">
+            <div data-aos="fade">
+              <p className=" mb-3 text-justify text-xl font-light">
+                Fondé avec la conviction que chaque client mérite une défense robuste et un conseil éclairé, AD AVOCAT porte l&apos;ambition d&apos;accompagner ses clients dans leurs différents secteurs d&apos;activités via des solutions juridiques crédibles.
+              </p>
+              <p className="text-justify text-lg font-light ">
+                <span className="font-semibold ">Notre approche</span> : Nous privilégions la prévention des risques juridiques tout en nous engageant à défendre les intérêts de nos clients en cas de contentieux. Nous anticipons les évolutions réglementaires pour vous permettre de rester concentré sur votre cœur de métier. 
+                {/* Notre approche combine expertise technique et compréhension approfondie de vos enjeux pour vous offrir des solutions juridiques innovantes et efficace */}
+              </p>
             </div>
+            {/* <div className=" relative w-400 h-65 max-2xl:hidden ">
+              <Image className=" rounded-lg object-cover" alt="Statue de la Justice ,Thémis" src="/images/card1.jpg" fill />
+            </div> */}
           </div>
         </section>
 
@@ -191,50 +197,67 @@ export default function Home() {
           </div>
         </section>
     
+        {/* Qui sommes nous? */}
+        <section>
+          
+
+        </section>
+
         {/* equipes */}
-        <section className="sm:px-35  md:px-30 lg:px-30 xl:px-50">
+        <section className="sm:px-35 md:px-30 lg:px-30 xl:px-50">
           <header>
-            <h2 className="b-15 text-2xl min-sm:text-4xl font-semibold text-gray-800 mb-15 text-center "><span data-aos='fade' data-aos-easing="linear" >L&apos;</span><span data-aos='fade' data-aos-easing="linear" data-aos-delay='100'>e</span><span data-aos='fade' data-aos-easing="linear" data-aos-delay='200'>q</span><span data-aos='fade' data-aos-easing="linear" data-aos-delay='300'>u</span><span data-aos='fade' data-aos-easing="linear" data-aos-delay='400'>i</span><span data-aos='fade' data-aos-easing="linear" data-aos-delay='500'>p</span><span data-aos='fade' data-aos-easing="linear" data-aos-delay='600'>e</span></h2>
+            <h2 className="text-2xl  min-sm:text-5xl  text-gray-800 mb-12 text-center "><span data-aos='fade' data-aos-easing="linear" >L&apos;</span><span data-aos='fade' data-aos-easing="linear" data-aos-delay='100'>é</span><span data-aos='fade' data-aos-easing="linear" data-aos-delay='200'>q</span><span data-aos='fade' data-aos-easing="linear" data-aos-delay='300'>u</span><span data-aos='fade' data-aos-easing="linear" data-aos-delay='400'>i</span><span data-aos='fade' data-aos-easing="linear" data-aos-delay='500'>p</span><span data-aos='fade' data-aos-easing="linear" data-aos-delay='600'>e</span></h2>
           </header>
-
-          <div className="grid px-10 min-sm:px-0 items-center justify-center sm:gap-14 lg:gap-4 grid-cols-1 md:grid-cols-2 min-lg:grid-cols-4 gap-15 ">
-            <div data-aos='fade-in' data-aos-delay='500'  className="group overflow-hidden">
-              <div className="relative h-90  mb-3 overflow-hidden">
-                <Image  src="/images/avocat1.jpg" className=" rounded-md object-cover" fill alt="membres" />
-              </div>
-              <div className="">
-                <p className="mb-2 ">Nom</p>
-                <p className="text-gray-600"> poste</p>
-              </div>
-            </div>
-
-            <div data-aos='fade-in' data-aos-delay='600'  className="group overflow-hidden">
-              <div className="relative h-90  mb-3 overflow-hidden">
-                <Image  src="/images/avocat1.jpg" className=" rounded-md object-cover" fill alt="membres" />
-              </div>
-              <div className="">
-                <p className=" mb-2 ">Nom</p>
-                <p className="text-gray-500"> poste</p>
+          
+          {/* <div data-aos='fade-in' data-aos-delay='500'  className=" group overflow-hidden ">
+            <div className="relative h-90 mb-3 overflow-hidden">
+              <Image  src="/images/pdg_ad.jpg" className="object-cover object-center transition-transform duration-500 ease-in-out group-hover:scale-107" fill alt="Avocat principal" />  
+              <div className="absolute inset-0 bg-gray-800/0"></div>
+              <div className="absolute inset-0 flex flex-col justify-end  text-white text-center ">
+                <div className="bg-gray-700/50  pb-2">
+                  <p className="text-lg font-light">Dr Stanic ADJACOTAN</p>
+                  <p className="">Avocat principal</p>
+                </div>
               </div>
             </div>
-
-            <div data-aos='fade-in' data-aos-delay='700' className="group overflow-hidden">
+          </div> */}
+           
+          {/* <div data-aos='fade-in' data-aos-delay='550'  className="group overflow-hidden">
+            <div className="relative h-90  mb-3 overflow-hidden">
+              <Image  src="/images/pdg_ad.jpg" className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-107" fill alt="Avocat" />
+            </div>
+            <div className="text-gray-800 text-center pb-3">
+              <p className="text-lg font-light">Dr Stanic ADJACOTAN</p>
+              <p className="">Avocat principal</p>
+            </div>
+          </div> */}
+          <div className="grid grid-cols-[80%] md:grid-cols-3 lg:grid-cols-[35%_35%_35%] min-xl:grid-cols-[25%_25%_25%] gap-10 min-sm:px-0 items-center justify-center">
+            <div data-aos='fade-in' data-aos-delay='550'  className=" bg-gray-700  group overflow-hidden">
               <div className="relative h-90  mb-3 overflow-hidden">
-                <Image  src="/images/avocat.jpg" className=" rounded-md object-cover" fill alt="membres" />
+                <Image  src="/images/pdg_ad.jpg" className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-107" fill alt="Avocat" />
               </div>
-              <div className=" ">
-                <p className=" mb-2">Nom</p>
-                <p className="text-gray-500"> poste</p>
+              <div className="text-white text-center pb-3">
+                <p className="text-lg font-light">Dr Stanic ADJACOTAN</p>
+                <p className="">Avocat principal</p>
               </div>
             </div>
-
-            <div data-aos='fade-in' data-aos-delay='800'  className="group overflow-hidden">
+            <div data-aos='fade-in' data-aos-delay='550'  className=" bg-gray-700  group overflow-hidden">
               <div className="relative h-90  mb-3 overflow-hidden">
-                <Image  src="/images/avocat.jpg" className=" rounded-md object-cover" fill alt="membres" />
+                {/* <Image  src="/images/" className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-107" fill alt="Avocat" /> */}
               </div>
-              <div className=" ">
-                <p className=" mb-2">Nom</p>
-                <p className="text-gray-500"> poste</p>
+              <div className="text-white text-center pb-3">
+                <p className="text-lg font-light">xxxxxxxx</p>
+                <p className="">Avocat xxxxx</p>
+              </div>
+            </div>
+            
+            <div data-aos='fade-in' data-aos-delay='600'  className=" bg-gray-700  group overflow-hidden">
+              <div className="relative h-90  mb-3 overflow-hidden">
+                {/* <Image  src="/images/" className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-107" fill alt="Avocat" /> */}
+              </div>
+              <div className="text-white text-center pb-3">
+                <p className="text-lg font-light">xxxxxxxx</p>
+                <p className="">Avocat xxxxx</p>
               </div>
             </div>
           </div>
